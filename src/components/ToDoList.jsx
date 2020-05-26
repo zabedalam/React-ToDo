@@ -1,15 +1,24 @@
-import React, { Component } from 'react'
-import ToDoItem from './ToDoItem'
+import React, { Component } from "react";
+import ToDoItem from "./ToDoItem";
 
 class ToDoList extends Component {
   render() {
     return (
       <>
-        <div>From TODO list</div>
-        <ToDoItem></ToDoItem>
+        <ul className="list-group my-5">
+          <h3 className="text-capitalize text-center">todo list</h3>
+          <ToDoItem></ToDoItem>
+          <button
+            type="button"
+            className="btn btn-danger btn-block text-capitalize mt-5"
+          >
+            clear list
+          </button>
+        </ul>
+        
       </>
-    )
+    );
   }
 }
 
-export default ToDoList
+export default ToDoList;
